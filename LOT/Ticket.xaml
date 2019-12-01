@@ -1,0 +1,30 @@
+﻿<Window x:Class="LOT.Ticket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOT"
+        mc:Ignorable="d"
+        Title="Zapisz bilet" Height="200" Width="400" ResizeMode="NoResize" WindowStyle="ToolWindow" Icon="PRL.ico" WindowStartupLocation="CenterScreen">
+    <Grid Background="#FFF1F1F1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="60*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="40*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="imageName" Grid.ColumnSpan="4" HorizontalAlignment="Left" Height="30" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Margin="87,6,0,0"/>
+        <Button x:Name="imgButton" Content="Zatwierdz" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Top" Width="133" Height="30" Click="imgButton_Click" Margin="0,10,0,0"/>
+        <Label x:Name="label" Content="Podaj nazwę zapisywanego biletu." Grid.ColumnSpan="3" Width="217" Grid.Column="1" Margin="0.444,23,0,0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label x:Name="label1" Content="Twój bilet zostanie zapisany w folderze 'Aplikacja PRL' w Dokumentach" HorizontalAlignment="Left" Margin="0,4,0,0" VerticalAlignment="Top" Grid.ColumnSpan="5" Width="394" Grid.Row="2" Grid.RowSpan="2" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+
+    </Grid>
+</Window>

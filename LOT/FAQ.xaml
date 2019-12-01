@@ -1,0 +1,68 @@
+﻿<Window x:Class="LOT.FAQ"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOT"
+        mc:Ignorable="d"
+        Title="FAQ" Height="600" Width="600" ResizeMode="NoResize" Icon="PRL.ico" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="36*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="517*"/>
+        </Grid.RowDefinitions>
+        <ScrollViewer HorizontalAlignment="Left" Height="507" Margin="10,0,0,0" VerticalAlignment="Top" Width="574" Grid.Row="3">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="10*"/>
+                </Grid.RowDefinitions>
+                <Label x:Name="label1" Content="1. Jaki bagaż podręczny przysługuje w danej klasie podróży?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock1" TextWrapping="Wrap" Text="" Margin="15,5,15,0" Grid.Row="2"/>
+                <Label x:Name="label2" Content="2. Jak mogę wybrać i zarezerwować miejsca w samolocie?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="3" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock2" TextWrapping="Wrap" Text="Miejsca w samolocie możesz zarezerwować klikając na wolne miejsce w wybranej przez Ciebie klasie, w zakładce 'Wybór miejsca'." Margin="15,5,15,0" Grid.Row="4"/>
+                <Label x:Name="label3" Content="3. Jak mogę anulować swoją rezerwację?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="5" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock3" TextWrapping="Wrap" Text="Aby anulować rezerwację i uzyskać zwrot pieniędzy, skontaktuj się z naszym biurem obsługi klienta, lub zadzwoń pod numer 123-456-789. Pamiętaj obsługujemy zwroty za bilety wystawione na naszej stronie lub zakupione przez aplikację 'PRL'. Jeżeli bilet został zakupiony w innym kanale sprzedaży (np. w biurze podróży), skontaktuj się bezpośrednio z wystawcą biletu. " Margin="15,0,15,0" Grid.Row="6"/>
+                <Label x:Name="label4" Content="4. Jak mogę zmienić swoją rezerwację?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="7" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock4" TextWrapping="Wrap" Text="Aby zmienić swoją rezerwację, skontaktuj się z naszym biurem obsługi klienta, lub zadzwoń pod numer 123-456-789." Margin="15,5,15,0" Grid.Row="8"/>
+                <Label x:Name="label5" Content="5. Jakie dokumenty są mi potrzebne w podróży?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="9" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock5" TextWrapping="Wrap" Text="Zabierz ze sobą dokument potwierdzający tożsamość - dowód osobisty lub paszport (zależnie od kraju, do którego się wybierasz) i kartę pokładową. Kartę pokładową możesz pobrać z naszej strony, odebrać na lotnisku w automacie samoobsługowym lub przy stanowisku odprawy. Pobranie karty pokładowej jest bezpłatne." Margin="15,0,15,0" Grid.Row="10"/>
+                <Label x:Name="label6" Content="6. Czy mogę zarezerwować bilet dla kogoś innego?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="11" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock6" TextWrapping="Wrap" Text="Rezerwacji można dokonać dla dowolnej osoby. Nie jest konieczne, by pasażer był zarejestrowany i był płatnikiem." Margin="15,5,15,0" Grid.Row="12"/>
+                <Label x:Name="label7" Content="7. Gdzie mogę znaleźć szczegółowe informacje o moim bilecie?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="13" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock7" TextWrapping="Wrap" Text="Informacje te zostaną wygenerowane pod koniec procesu zakupu biletu. Możesz je także pobrać na swój komputer." Margin="15,5,15,0" Grid.Row="14"/>
+                <Label x:Name="label8" Content="8. Czy mogę zarezerwować lot na przyszły rok?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="15" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock8" TextWrapping="Wrap" Text="Nie. Nasze usługi realizowane są tylko na 60 dni wprzód." Margin="15,5,15,0" Grid.Row="16"/>
+                <Label x:Name="label9" Content="9. Czy moje dane są komukolwiek udostępniane?" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="17" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="14"/>
+                <TextBlock x:Name="textBlock9" TextWrapping="Wrap" Text="Nie. Twoje dane są bezpiecznie przechowywane w celu szybszego dokonywania rezerwacji biletów i nie są nikomu udostępniane. " Margin="15,5,15,0" Grid.Row="18"/>
+            </Grid>
+
+        </ScrollViewer>
+        <Label x:Name="label" Content="FAQ - Najczęściej zadawane pytania" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Margin="5,0,195,0" Stroke="White" VerticalAlignment="Bottom" Grid.Row="1">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Black" Opacity="0.6"/>
+            </Rectangle.Fill>
+        </Rectangle>
+    </Grid>
+</Window>

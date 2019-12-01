@@ -1,0 +1,52 @@
+﻿<Window x:Class="LOT.Rejestracja"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LOT"
+        mc:Ignorable="d"
+        Title="Rejestracja" Height="500" Width="350" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="PRL.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="120*"/>
+            <ColumnDefinition Width="190*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Content="Rejestracja" HorizontalAlignment="Left" Margin="10,25,0,0" VerticalAlignment="Top" FontSize="18" Grid.ColumnSpan="2"/>
+        <Rectangle HorizontalAlignment="Stretch" Height="5" Margin="5,60,5,0" Stroke="White" VerticalAlignment="Top" Grid.ColumnSpan="4">
+            <Rectangle.Fill>
+                <SolidColorBrush Color="Black" Opacity="0.6"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="login" Content="Login:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Grid.Row="2" Grid.Column="1"/>
+        <Label x:Name="email" Content="E-mail:" HorizontalAlignment="Left" Margin="0,10,0,0" Grid.Row="4" VerticalAlignment="Top" Grid.Column="1"/>
+        <Label x:Name="password" Content="Hasło:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Grid.Row="6" Grid.Column="1"/>
+        <Label x:Name="password2" Content="Powtórz hasło:" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" Grid.Row="8" Grid.Column="1"/>
+        <CheckBox x:Name="acceptation" Content="Akceptuję Politykę prywatności i Regulamin" HorizontalAlignment="Left" Margin="10,35,0,0" Grid.Row="9" VerticalAlignment="Top" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <TextBox x:Name="txtBloxLogin" Grid.Column="2" Margin="10,10,10,10" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Stretch" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="txtBloxEmail" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,10,10,10" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Stretch" LostFocus="Compatibility" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="passwordBox" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,10,10,10" Grid.Row="6" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <PasswordBox x:Name="passwordBox2" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,10,10,10" Grid.Row="8" VerticalAlignment="Stretch" KeyUp="Equality" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button x:Name="registerBut" Content="Zarejestruj" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="11" VerticalAlignment="Stretch" Click="registerBut_Click"/>
+        <Label x:Name="labWarning" Content="Hasła muszą być identyczne!" Grid.Column="2" HorizontalAlignment="Left" Margin="10,33,0,0" Grid.Row="8" Grid.RowSpan="2" VerticalAlignment="Top" Visibility="Hidden" Foreground="Red"/>
+        <Label x:Name="labEmailWarning" Content="Wprowadź poprawny adres e-mail!" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="5,33,0,0" Grid.Row="4" Grid.RowSpan="2" VerticalAlignment="Top" Visibility="Hidden" Foreground="Red"/>
+        <Label x:Name="labClickWarning" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="11" VerticalAlignment="Top" Foreground="Red"/>
+
+    </Grid>
+</Window>

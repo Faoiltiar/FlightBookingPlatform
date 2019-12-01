@@ -1,0 +1,46 @@
+﻿<Window x:Class="LOT.DopasowanieLotySamoloty"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DopasowanieLotySamoloty" Width="900" Height="550" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Icon="PRL.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="20*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="150*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="50*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="img/tlo.jpg"/>
+        </Grid.Background>
+        <Rectangle x:Name="LogoutImg" HorizontalAlignment="Right" Height="21" Margin="0,10,80,0" Stroke="White" VerticalAlignment="Top" Width="20" MouseLeftButtonDown="Logout" Grid.Column="6">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="img/logout.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="labLogout" Content="Wyloguj się" HorizontalAlignment="Right" Margin="0,7,10,0" VerticalAlignment="Top" Foreground="White" MouseLeftButtonDown="Logout" Height="26" Width="71" Grid.Column="6" />
+        <Rectangle x:Name="PowrotImg" HorizontalAlignment="Left" Height="21" Margin="20,10,80,0" Stroke="White" VerticalAlignment="Top" Width="20" MouseLeftButtonDown="ComeBack" Grid.Column="0">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="img/logout.jpg"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label x:Name="labPowrot" Content="Powrót" HorizontalAlignment="Left" Margin="40,7,0,0" VerticalAlignment="Top" Foreground="White" MouseLeftButtonDown="ComeBack" Height="26" Width="71" Grid.Column="0" />
+        <Label Content="Typ Samolotu:" Grid.Column="1" HorizontalAlignment="Center" Foreground="White" FontSize="24" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <Label Content="Skąd:" Grid.Column="3" HorizontalAlignment="Center" Foreground="White" FontSize="24"  Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <Label Content="Dokąd:" Grid.Column="5" HorizontalAlignment="Center" Foreground="White" FontSize="24"  Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Stretch"/>
+        <Button x:Name="ButZapisz" Content="Zapisz typ do relacji" Grid.Column="5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" VerticalAlignment="Stretch" FontFamily="Lucida Sans Unicode" FontSize="18" Background="#FFAFEC2B" IsHitTestVisible="True" Click="butZapisz_Click"/>
+        <ComboBox Name="cBoxTypes" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Stretch" IsReadOnly="True" SelectedIndex="0"/>
+        <ComboBox Name="cBoxFlyFrom" Grid.Column="3" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Stretch" SelectionChanged="cBoxFlyFrom_SelectionChanged" IsReadOnly="True" SelectedIndex="0"/>
+        <ComboBox Name="cboxFlyTo" Grid.Column="5" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Stretch" IsReadOnly="True" SelectedIndex="0"/>
+    </Grid>
+</Window>
